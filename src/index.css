@@ -38,3 +38,28 @@ header h1 {
   text-align: center;
 
 }
+
+.card {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  margin: 30px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 150px;
+  margin-top: 40px;
+}
+
+.info2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 100px;
+}
