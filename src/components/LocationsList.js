@@ -6,11 +6,11 @@ export default function LocationsList(props) {
   const [location, setLocation] = useState([]);
   useEffect(() => {
     axios
-      .get("https://rickandmortyapi.com/api/locations/")
-      .then(res => { return console.log(res.data.results)
+      .get("https://rickandmortyapi.com/api/location/")
+      .then(res => { console.log(res.data.results)
             setLocation(res.data.results)})
       .catch(err => console.log(err))
-  }, [location])
+  }, [])
 
   return (
     <section className='character-list grid-view'>

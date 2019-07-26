@@ -7,13 +7,13 @@ export default function CharacterList(props) {
   const [character, setCharacter] = useState([]);
   useEffect(() => {
     // TODO: Add AJAX/API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+    //  Important: verify the 2nd `useEffect` parameter: the dependancies array
     axios
       .get("https://rickandmortyapi.com/api/character/")
-      .then(res => { return console.log(res.data.results)
-            setCharacter(res.data.results)})
+      .then(res => {  console.log(res.data.results)
+           setCharacter(res.data.results)})
       .catch(err => console.log(err))
-  }, [character])
+  }, [])
 
   return (
     <section className='character-list grid-view'>
